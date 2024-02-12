@@ -20,10 +20,10 @@ jobs:
           args: trivy fs --scanners vuln,config,secret --sast .
     
         env:
-          AQUA_KEY: ${{ secrets.AQUA_KEY_PROD }} #119
-          AQUA_SECRET: ${{ secrets.AQUA_SECRET_PROD }} #119
-          # AQUA_KEY: ${{ secrets.AQUA_KEY }} #119
-          # AQUA_SECRET: ${{ secrets.AQUA_SECRET }} #119
+          #AQUA_KEY: ${{ secrets.AQUA_KEY_PROD }} #119
+          #AQUA_SECRET: ${{ secrets.AQUA_SECRET_PROD }} #119
+          AQUA_KEY: ${{ secrets.AQUA_KEY }} #119
+          AQUA_SECRET: ${{ secrets.AQUA_SECRET }} #119
           GITHUB_TOKEN: ${{ github.token }}
           # AQUA_URL: https://api.dev.supply-chain.cloud.aquasec.com
           # CSPM_URL: https://stage.api.cloudsploit.com
